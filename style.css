@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&display=swap');@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --primary: #FEA116;
+    --light: rgb(241, 248, 255);
+    --dark: #0F172B;
+}
+
+body{
+    max-width: 1440px;
+    height: auto;
+
+}
+a{
+    text-decoration: none;
+ color:var(--light) ;
+}
+a:hover{
+    color: var(--primary) ;
+}
+ul{
+    list-style-type: none;
+}
+h3{
+    font-weight: 800;
+}
+/* .....................nav-hero-start................. */
+.nav-hero{
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../img/bg-hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/* .....................nav................. */
+nav{
+   
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-contenar{
+    width: 90%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.nav-list ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.btn{
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #FEA116;
+    border: 1px solid var(--primary);
+    cursor:pointer;
+}
+.btn:hover{
+    background-color: var(--dark);
+}
+.btn a{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.logo a{
+    color:var(--primary) ;
+}
+  .logo h1{
+    text-transform: capitalize;
+    font-family: "Nunito", sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+}
+.logo i{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+/* .....................nav-finish................. */
+
+/* .....................hero-start................. */
+.hero{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.hero-contenar{
+    width: 85%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  padding-bottom: 60px;
+}
+.text{
+    animation-name: leftside;
+    animation-duration: 1s;
+}
+
+
+.hero-contenar .pix img{
+    width: 500px;
+    height: 500px;
+    animation: img 50s infinite linear; 
+}
+
+.hero-contenar .text{
+    color:var(--light) ;
+
+}
+.text-header h1{
+    font-size: 70px;
+}
+.text-content p{
+    color:var(--light) ;
+    padding-bottom: 40px;
+}
+/* .....................hero-finish................. */
+
+ /* .....................nav--hero-finish.................  */
+
+ /* <!-- ................................section-hero-two start.............................. --> */
+ .hero-two{
+    max-width:100%;
+    display: flex;
+    justify-content: space-around;
+   margin: 80px 0;
+
+ }
+ .hero-two-contenar{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+ }
+ .hero-two-contenar-card{
+    width: 250px;
+    height: auto;
+    padding:25px 0 ;
+    padding-left:15px ;
+    padding-right: 20px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .2s;
+    animation: hero-two-contenar-card  linear;
+    animation-duration: 1s;
+        animation-timeline: view();
+        animation-range: entry 0% cover 30%;
+    
+ }
+ .hero-two-contenar-card:hover{
+    transform: scale(1.1);
+ }
+
+ .hero-two-contenar-card p{
+    color:rgba(0, 0, 0, .6) ;
+ }
+ .hero-two-contenar-card i{
+    color:var(--primary) ;
+ }
+ .hero-two-contenar-card h3{
+    padding: 5px 0;
+
+ }
+
+  /* <!-- ................................section-hero-two finish.............................. --> */
+
+
+   /* <!-- ................................section-about-us start.............................. --> */
+   .about-us{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+   }
+   .about-us-contenar{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 50px;
+    align-items: center;
+   }
+   #counter h1{
+    color:var(--primary) ;
+   }  
+   
+  .about-us-contenar-pix{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    column-gap: 15px;
+    row-gap: 10px;
+    position: relative;
+   }
+   .pixanimation{
+    animation: pic linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 30%;
+   }
+   
+
+   
+   .about-us-contenar-pix .pixone{
+    width: 250px;
+    height: 250px;
+    justify-items: center;
+   }  
+   .about-us-contenar-pix .pixtwo{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 100px;;
+   }
+   .about-us-contenar-pix .pixthree{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 100px;
+   }
+
+   h2{
+    color:var(--primary) ;
+    font-family: "Pacifico", serif;
+    font-weight: 300;
+   }
+    h1{
+    font-size: 40px;
+    font-weight: 900;
+   }
+   h1 i{
+    color:var(--primary) ;
+   }
+   p{
+    color:rgba(0, 0, 0, .6) ;
+    padding: 15px 0;
+   }
+   #counter{
+    display: flex;
+    justify-content: space-around;
+    
+   } 
+   .about-us-contenar-text{
+    animation: about-us-contenar-text linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 30%;
+
+   }
+  
+   .about-us-contenar-text .btn{
+    margin-top: 25px;
+   }
+
+   /* <!-- ................................section-about-us finish.............................. --> */
+
+   /* <!-- ................................section-food menu header start.............................. --> */
+   .food-menu-header{
+    max-width: 100%;
+    display: flex;
+    justify-content:center;
+   }
+   .food-menu-header-contenar{
+    text-align: center;
+    width: 50%;
+    margin: 50px 0 20px 0;
+    animation: food-menu-header-contenar linear;
+   animation-timeline: view();
+   animation-range: entry 0% cover 30%;
+
+   }
+
+   .time{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+   }
+   .time-text i{
+    color:var(--primary) ;
+   }
+   .time-text p{
+    color:black ;
+    font-weight: 800;
+    margin-top: -15px;
+   }
+  
+ 
+
+   /* <!-- ................................section-food menu header finish.............................. --> */
+
+   /* <!-- ................................section-food items start.............................. --> */
+   .food-items{
+    max-width: 100%;
+    display: flex;
+    justify-content:center;
+    margin-bottom: 50px;
+    animation: food-items linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+   }
+  
+      
+   
+
+
+   .food-items-contenar{
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 10px;
+}
+.foods{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    position: relative;
+}
+.foods h3::after{
+    content: '$ 150';
+    color:var(--primary) ;
+    position: absolute;
+    right: 20px;
+}
+
+.foods p::after{
+    content: '';
+    background: rgba(0, 0, 0, .2);
+    width: 80%;
+    height: 2px;
+    position: absolute;
+    left: 95px;
+    top: 35px;
+}
+
+/* <!-- ................................section-food items finish.............................. --> */
+
+/* <!-- ................................section-food items start.............................. --> */
+.Reservation{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-color: var(--dark); 
+}
+.form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    gap: 20px;
+}
+.input{
+    background-color:var(--light);
+    height: 60px;
+    width: 280px;
+}
+.form-input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding-left: 10px;
+}
+#SpecialRequest{
+    padding-left: ;
+    margin: 15px 0;
+    width: 100%;
+    height: 100px;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+    outline: none;
+}
+.location{
+    animation: location linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+
+.Reservation-info{
+    animation: Reservation-info linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+
+.Reservation-info .btn{
+    width: 100%;
+    color:var(--light) ;
+    text-align: center;
+}
+.Reservation-info h1{
+    color:var(--light) ;
+    margin-bottom: 15px;
+}
+ 
+   /* <!-- ................................section-food items finish.............................. --> */
+   /* <!-- ................................Team-Members start.............................. --> */
+   .Team-Members{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   }
+   .Team-Members-header{
+    text-align: center;
+    margin: 50px 0;
+    animation: Team-Members-header linear;
+   animation-timeline: view();
+   animation-range: entry 0% cover 30%;
+   }
+
+.card{
+    
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    padding: 15px;
+    width: 260px;
+    height: 360px;
+    text-align: center;
+    transition: .2s;
+   }
+   .card:hover{
+    transform: scale(1.1);
+ }
+  
+   .card h3{
+    text-transform: uppercase;
+    margin: 5px 0 0 0 ;
+   }
+   .card p{
+    margin-top: -10px;
+   }
+   .card img{
+    width: 100%;
+    border-radius: 50%;
+   }
+   .card i{
+    color:var(--primary) ;
+    font-size: 30px;
+    width: 50px;
+    cursor:pointer;
+   }
+   .card i:hover{
+    color: var(--dark);
+   }
+   .Team-Members-contenar{
+    width: 85%;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 15px;
+   animation: Team-Members-contenar  linear;
+   animation-duration: 1s;
+   animation-timeline: view();
+   animation-range: entry 0% cover 30%;
+   }
+
+  /* <!-- ................................Team-Members finish.............................. --> */
+   /* <!-- ................................ footerstart.............................. --> */
+footer{
+    background: var(--dark);
+    color:var(--light) ;
+
+}
+   .footer-top{
+    color:var(--light) ;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    margin-top: 50px;
+   }
+   .footer{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+    
+   }
+   .i{
+    color:var(--primary) ;
+    font-size: 30px;
+   }
+   .fttoer-last-text{
+    text-align: center;
+    border-top: 1px solid var(--light) ;
+    padding: 20px;
+   }
+   .footer-about a:hover{
+    color:var(--primary) ;
+    font-style: italic;
+   }
+   .i a:hover{
+    color:var(--primary) ;
+   }
+   /* .fttoer-last-text a img{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right:15px 
+   } */
+
+   /* ........................@keyframes..................... */
+    
+   @keyframes leftside {
+    from {
+      transform:translateX(-400px);
+    }
+  }
+@keyframes img{
+    100%{transform:rotate(360deg) ;}
+    
+}
+ @keyframes hero-two-contenar-card {
+    from {
+      opacity: 0;
+      transform:translate(180px);
+    }
+    to {
+      opacity: 1;
+      transform:translate(0px);
+    }
+  }
+@keyframes pic {
+    from {
+      opacity: 0;
+      scale: .5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+      
+    }
+  }
+ @keyframes about-us-contenar-text {
+    from {
+      opacity: 0;
+      transform:translate(180px);
+    }
+    to {
+      opacity: 1;
+      transform:translate(0px);
+      
+    }
+  }
+@keyframes food-menu-header-contenar {
+from {
+ opacity: 0;
+ scale: .5;
+}
+to {
+ opacity: 1;
+ scale: 1;
+ 
+}
+}
+ @keyframes food-items {
+    from {
+      opacity: 0;
+      transform:translateY(200px);
+    }
+    to {
+      opacity: 1;
+      transform:translateY(0px);
+    }
+}
+@keyframes location {
+    from {
+     opacity: 0;
+     scale: .5;
+    }
+    to {
+     opacity: 1;
+     scale: 1;
+     
+    }
+}
+@keyframes Reservation-info {
+    from {
+      opacity: 0;
+      transform:translateX(300px);
+    }
+    to {
+      opacity: 1;
+      transform:translateX(0px);
+    }
+}
+ @keyframes Team-Members-header {
+from {
+ opacity: 0;
+ scale: .5;
+}
+to {
+ opacity: 1;
+ scale: 1;
+ 
+}
+}
+@keyframes Team-Members-contenar {
+from {
+ opacity: 0;
+ transform:translate(-180px);
+}
+to {
+ opacity: 1;
+ transform:translate(0px);
+}
+}
